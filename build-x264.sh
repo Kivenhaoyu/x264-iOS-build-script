@@ -55,7 +55,7 @@ then
     if [ ! -r $SOURCE ]
     then
     echo 'x264 source not found. Trying to download...'
-    curl https://download.videolan.org/pub/x264/snapshots/x264-snapshot-20140930-2245.tar.bz2 | tar xj && ln -s x264-snapshot-20140930-2245 x264 || exit 1
+    curl ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 | tar xj && ln -s x264-snapshot-20180827-2245 x264 || exit 1
     fi
 # end: added by sunminmin, 2015/09/07
 
